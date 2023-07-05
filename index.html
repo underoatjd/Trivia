@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Trivias</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <h1>Generador de Trivias</h1>
+  
+  <form id="triviaForm">
+    <label for="category">Categoría:</label>
+    <select id="category">
+      <option value="9">General Knowledge</option>
+      <option value="10">Entertainment: Books</option>
+      <option value="11">Entertainment: Film</option>
+      <!-- Agrega aquí más opciones de categorías -->
+    </select>
+    
+    <label for="difficulty">Dificultad:</label>
+    <select id="difficulty">
+      <option value="easy">Fácil</option>
+      <option value="medium">Medio</option>
+      <option value="hard">Difícil</option>
+    </select>
+    
+    <label for="type">Tipo de Respuesta:</label>
+    <select id="type">
+      <option value="multiple">Múltiple</option>
+      <option value="boolean">Verdadero/Falso</option>
+    </select>
+    
+    <button type="submit">Generar Trivia</button>
+  </form>
+  
+  <div id="triviaContainer">
+    <!-- Aquí se mostrarán las preguntas y respuestas -->
+  </div>
+  
+  <h2>Puntaje Final: <span id="score">0</span></h2>
+  
+  <button id="newTriviaBtn" style="display: none;">Crear Nueva Trivia</button>
+  
+  <script src="app.js"></script>
+</body>
+</html>
